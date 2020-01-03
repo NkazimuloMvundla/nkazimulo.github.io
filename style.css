@@ -1,0 +1,291 @@
+
+*{
+   
+  box-sizing: border-box;
+}
+
+.header{
+width: 100%;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+padding: 20px;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+border-radius: 20px 10px 50px;
+}
+.header a{
+    text-decoration: none;
+    color: #333;
+    margin:12px;
+}
+.header a.menu{
+    font-size:17px;
+}
+
+
+
+body{
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  
+   
+}
+/*.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-content: space-between ;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+*/
+.container{
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+width: 1200px;
+}
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.container .col-md-3{
+    width: 25%;
+    height: auto;
+    border: 2px solid grey;
+    float: left;
+    margin-bottom: 5px;
+    padding: 7px;
+
+  
+}
+div#content{
+	border: 1px solid #e2e2e2;
+}
+
+
+button {
+
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+border-top-color: transparent;
+border-right-color: transparent;
+border-bottom-color: transparent;
+border-left-color: transparent;
+border-radius: 4px;
+color: coral;
+font-size: 16px;
+
+}
+
+button :hover{
+
+box-shadow: 0 0 2px;
+
+}
+
+.slider{
+width: 100%;
+height: 450px;
+padding: 20px;
+margin-top: 7px;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+border-radius: 10px;
+border: 1px solid grey; 
+background-image: url("you-x-ventures-1579103-unsplash.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+
+
+}
+.slider-text{
+    margin-top: 20%;
+    font-family: 'Ubuntu', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 13px 20px;
+    background: rgba(0,188,150,0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.slider-text a{
+    color:darkorange;
+}
+h2.projects{
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 4rem;
+    letter-spacing: 0;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+      
+     
+      
+    }
+.container .col-md-3{
+    width: 100%;
+    height: auto;
+    border: 2px solid grey;
+ 
+  
+}
+
+.slider{
+width: 100%;
+height: 150px;
+background-image: url("you-x-ventures-1579103-unsplash.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+}
+.slider-text{
+    margin-top: 20%;
+    font-family: 'Ubuntu', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 2px 2px;
+    background: rgba(0,188,150,0.8);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+
+
+.col-md-4{
+   width: 100%;
+}
+
+
+
+
+
+
+
+}
+ /* The side navigation menu */
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background: #4D6E8E;;
+
+transition: all 0.3s;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+.opClass {
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+ul li{
+  list-style-type: none;
+}
+.container#ux{
+ 
+  padding: 7px;
+}
+
+.container#ux::after {
+    position: absolute;
+    transform: skewY(-5deg);
+    bottom: 1;
+    right: 0;
+    width: 100%;
+    height: 150%;
+    content: '';
+    background: linear-gradient(to right, #377fea 20%, #653dea) #377fea;
+    margin-top: 3%;
+}
+
+h1.title {
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
